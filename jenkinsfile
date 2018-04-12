@@ -1,0 +1,9 @@
+node{
+    stage('scm') {
+    git 'https://github.com/Sadik1444/game-of-life.git'
+}
+  stage('package')
+  {
+  sh 'mvn package'
+}
+}
